@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    overflow:auto;
+}
+
+.quiz{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(skyblue, blue);
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+}
+
+.quiz h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* card image css */
+
+.card{
+    cursor: pointer;
+}
+
+.card img{
+    height: 300px;
+    width: 100%;
+}
+
+.card-body h5{
+    text-align: center;
+    font-weight: bold;
+}
+
+.questiondiv{
+    position: absolute;
+    background-color: gray;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.questiondiv div{
+    background-color: white;
+    width: 60%;
+    padding: 10px 20px;
+}
+
+@media (max-width:776px){
+    .questiondiv div{
+        width: 100%;
+    }
+}
+
+.questiondiv div h2{
+    font-size: 20px;
+}
+
+.questiondiv div p{
+    background-color: rgba(128, 128, 128, 0.628);
+    padding: 5px 5px;
+    color: black;
+    cursor: pointer;
+}
+
+#anspara{
+    color: blue;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+
+.questiondiv div h6{
+    text-align: center;
+}
+
+.questiondiv div i{
+    color: red;
+}
+
+button{
+    margin-left: 20px;
+    padding: 5px 20px;
+}
+
+.first-div{
+    position:relative;
+    top: 100px;
+}
